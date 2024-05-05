@@ -3,7 +3,7 @@ package main
 import (
 	"app/config"
 	"app/routes"
-	"os"
+	// "os"
 )
 
 func main() {
@@ -13,7 +13,7 @@ func main() {
 
 	e := routes.Init()
 
-	os.Getenv("PORT")
+	// os.Getenv("PORT")
 
 	e.Logger.Fatal(e.Start(":8000"))
 }
