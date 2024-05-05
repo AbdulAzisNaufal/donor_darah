@@ -23,7 +23,7 @@ func Init() *echo.Echo {
 	e.POST("/user/login", controller.Login)
 	e.POST("/user/registevent", controller.RegistToEvent)
 	e.POST("/user/order", controller.PesanDarah)
-	e.POST("/user/bloodrecommendation", controller.RecommendationAI)
+	// e.POST("/user/bloodrecommendation", controller.RecommendationAI)
 
 	//admin routes
 	adminGroup := e.Group("/admin")
